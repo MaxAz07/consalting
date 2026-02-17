@@ -1,0 +1,20 @@
+{
+  "name": "consalting",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "canvas": "^3.2.1",
+    "docx": "^9.5.3",
+    "express": "^5.2.1",
+    "mammoth": "^1.11.0",
+    "node-fetch": "^3.3.2",
+    "pdf-parse": "^2.4.5",
+    "pdf-to-png-converter": "^3.11.0",
+    "pdfjs-dist": "^5.4.624",
+    "tesseract.js": "^7.0.0"
+  }
+}

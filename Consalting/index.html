@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Consulting - Zhetysu University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Zhetysu University" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Legal Consulting</span>
+                    <span class="logo-subtitle">Zhetysu University</span>
+                </div>
+            </div>
+            
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn">
+                    <span class="lang-icon">🌐</span>
+                    <span class="lang-code" id="currentLang">RU</span>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option" data-lang="kk">
+                        <span>Қазақша</span>
+                    </button>
+                    <button class="lang-option" data-lang="ru">
+                        <span>Русский</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span>English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="10" rx="2"/>
+                        <circle cx="12" cy="5" r="2"/>
+                        <path d="M12 7v4"/>
+                    </svg>
+                </div>
+                <div class="chat-info">
+                    <h2 class="chat-title" id="chatTitle">Юридический консалтинг</h2>
+                    <div class="chat-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text" id="statusText">Online</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="10" rx="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <path d="M12 7v4"/>
+                        </svg>
+                    </div>
+                    <div class="message-content">
+                        <p id="welcomeMessage">Здравствуйте! Я чат-бот юридического консалтинга Жетысуйского государственного университета. Чем могу помочь?</p>
+                        <span class="message-time" id="welcomeTime"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Questions -->
+            <div class="quick-questions" id="quickQuestions">
+                <p class="quick-label" id="quickLabel">Быстрые вопросы:</p>
+                <div class="quick-buttons">
+                    <button class="quick-btn" data-question="rights" id="btnRights">Какие права у студента?</button>
+                    <button class="quick-btn" data-question="apply" id="btnApply">Как поступить?</button>
+                    <button class="quick-btn" data-question="grant" id="btnGrant">Как получить грант?</button>
+                    <button class="quick-btn" data-question="leave" id="btnLeave">Академический отпуск</button>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input">
+                <input type="text" class="message-input" id="messageInput" placeholder="Введите ваш вопрос...">
+                <button class="send-btn" id="sendBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"/>
+                        <polygon points="22 2 15 22 11 13 2 9"/>
+                    </svg>
+                    <span id="sendText">Отправить</span>
+                </button>
+            </div>
+        </div>
+
+        <p class="disclaimer" id="disclaimer">AI assistant provides general information. For specific legal advice, please contact the university legal department.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Zhetysu University" class="footer-logo-img">
+                    <div>
+                        <span class="footer-title">Legal Consulting</span>
+                        <span class="footer-subtitle">Zhetysu University</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <h3 id="contactsTitle">Контакты</h3>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Taldykorgan, Kazakhstan</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Zhetysu State University. <span id="rightsText">Все права защищены</span>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
